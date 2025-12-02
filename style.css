@@ -1,0 +1,103 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background dan kontainer utama */
+body {
+    background: linear-gradient(135deg, #dbccff, #eee6ff);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(150, 105, 255, 0.3);
+    padding: 30px;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #7c4dff;
+    margin-bottom: 20px;
+}
+
+/* Input dan tombol tambah */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #b899ff;
+    border-radius: 10px;
+    outline: none;
+}
+
+#addBtn {
+    background-color: #9c66ff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    background-color: #5f33ff;
+}
+
+/* Kartu tugas */
+.task-card {
+    background: #eee6ff;
+    border: 2px solid #c3b3ff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info p {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.task-info small {
+    color: #888;
+    font-size: 12px;
+}
+
+/* Tombol edit dan hapus */
+.task-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-actions button {
+    background-color: #ffffff;
+    border: 2px solid #bd99ff;
+    color: #7033ff;
+    padding: 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.task-actions button:hover {
+    background-color: #c099ff;
+    color: white;
+}
